@@ -23,5 +23,21 @@ function nextImage(){
         .classList.add("selected")
 }
 
+function backImage(){
+    images[currentImageIndex]
+    .classList.remove("selected")
+    
+    console.log(currentImageIndex, max)
+    if (currentImageIndex <= 0)
+        currentImageIndex = max - 1
+    else
+        currentImageIndex = currentImageIndex - 1
+
+        console.log(currentImageIndex, max)
+
+    images[currentImageIndex]
+        .classList.add("selected")
+}
+
 
 window.addEventListener("load",start)
