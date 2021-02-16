@@ -8,33 +8,33 @@
     </head>
 
     <body>
-        <div id = "container">          
-            <header>                
-                <div id = "menu" class = "menu">
-                    <a href = "index.html"> <img id= "logo" src ="images/logo.png" width="260px" height="80px" title="logo"/> </a>
-                    <nav>
-                        <ul>
-                            <li> <a href="./index.html"> Home </a> </li> 
-                            <li> <a href="./about.html"> Sobre </a> </li>
-                            <li> <a href="./projects.html"> Projetos </a> </li>                                                         
-                            <li> <a href="./contact.html"> Contato </li> </a> 
-                        </ul>
-                    </nav>                
-                </div>
-            </header>
-        </div>
 
-        <button id = "btnBack" onclick = "backImage()"> Voltar </button>
+        <header>                
+            <div id = "menu" class = "menu">
+                <a href = "index.html"> <img id= "logo" src ="images/logo.png" width="260px" height="80px" title="logo"/> </a>
+                <nav>
+                    <ul>
+                        <li> <a href="./index.html"> Home </a> </li> 
+                        <li> <a href="./about.html"> Sobre </a> </li>
+                        <li> <a href="./projects.html"> Projetos </a> </li>                                                         
+                        <li> <a href="./contact.html"> Contato </li> </a> 
+                    </ul>
+                </nav>                
+            </div>
+        </header>
+        
+        <button id = "btnBack" class = "buttonBackNext" onclick = "backImage()"> < </button> &nbsp;       
 
-        <div id="slider">
-            <img class="selected" src ="images/granturismo.jpg"/> 
-            <img src ="images/godofwar2.jpg"/> 
-            <img src ="images/assassinscreed.jpg"/> 
-        </div>
+            <div id="slider">
+                <img class="selected" src ="images/granturismo.jpg"/> 
+                <img src ="images/godofwar2.jpg"/> 
+                <img src ="images/assassinscreed.jpg"/>  
+            </div> 
+        &nbsp;
+        <button id = "btnNext" class = "buttonBackNext" onclick = "nextImage()"> > </button>
+            
 
-        <button id = "btnNext" onclick = "nextImage()"> Próximo </button>
-
-        <script src="script.js"></script>        
+        <script src="Outside/script.js"></script>        
     </body>    
 
 </html>
