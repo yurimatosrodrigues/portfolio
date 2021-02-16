@@ -1,16 +1,25 @@
-let time = 3000, 
+let time = 5000, 
     currentImageIndex = 0, 
     images = document
                 .querySelectorAll("#slider img")
-    max = images.length;
+    max = images.length,
+    slideActive = true;
 
-function start(){
+function start(){    
     setInterval(() =>{
-        nextImage()
+        if (slideActive) nextImage()
     }, time)
 }
 
-function nextImage(){
+function stopSlide(){
+    slideActive = false;
+}
+
+function restartSlide(){
+    slideActive = true;    
+}
+
+function nextImage(){    
     images[currentImageIndex]
         .classList.remove("selected")
 
@@ -18,9 +27,9 @@ function nextImage(){
 
     if (currentImageIndex >= max)
         currentImageIndex = 0    
-    
+
     images[currentImageIndex]
-        .classList.add("selected")
+        .classList.add("selected")    
 }
 
 function backImage(){
