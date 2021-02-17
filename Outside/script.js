@@ -1,25 +1,24 @@
 let time = 3000, 
     currentImageIndex = 0, 
-    images = document
-                .querySelectorAll("#slider img")
+    images = document.querySelectorAll("#slider img"),
     max = images.length,
-    slideActive = true;
+    slideActive = true,
+    btnBack = document.getElementById("btnBack"),
+    btnNext = document.getElementById("btnNext");;
 
 function start(){    
     setInterval(() =>{
         if (slideActive) nextImage()
     }, time)
+
+    images.forEach(image => image.addEventListener("mouseover", function stopSlide(){ slideActive = false }, false));
+    images.forEach(image => image.addEventListener("mouseout", function restartSlide(){ slideActive = true }, false))
+
+    btnNext.addEventListener("click", nextImage, false);
+    btnBack.addEventListener("click", backImage, false);
 }
 
-function stopSlide(){
-    slideActive = false;
-}
-
-function restartSlide(){
-    slideActive = true;    
-}
-
-function nextImage(){    
+function nextImage(){        
     images[currentImageIndex]
         .classList.remove("selected")
 
