@@ -26,9 +26,9 @@
         <button id = "btnBack" class = "buttonBackNext" onclick = "backImage()"> < </button> &nbsp;       
 
             <div id="slider">
-                <img class="selected" src ="images/granturismo.jpg"/> 
-                <img src ="images/godofwar2.jpg"/> 
-                <img src ="images/assassinscreed.jpg"/>  
+                <img class="selected" src ="images/granturismo.jpg" onmouseover="stopSlide()" onmouseout="restartSlide()"/> 
+                <img src ="images/godofwar2.jpg" onmouseover="stopSlide()" onmouseout="restartSlide()"/> 
+                <img src ="images/assassinscreed.jpg" onmouseover="stopSlide()" onmouseout="restartSlide()"/>  
             </div> 
         &nbsp;
         <button id = "btnNext" class = "buttonBackNext" onclick = "nextImage()"> > </button>
