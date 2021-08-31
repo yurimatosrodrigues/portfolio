@@ -1,64 +1,147 @@
 *{padding:0; margin: 0;}
 
 body{
-    display: flex;
+   
     flex-direction: center;
     justify-content: center;
     align-items: center;
 }
 
-#slider{
-    margin-top: 10%;
-    width: 85%;   
-    height: 35vw;
-    max-height: 400px;
-    position: relative;
+
+nav{   
+    margin-top: 0%;
+    background-color: teal;
+    height: 80px;
+    width: 100%;
+    opacity: 90;
 }
 
-#slider img{
-    position: absolute;
-    width: 100%;
+nav ul{
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul li{    
+	display:inline-block;	
+    line-height: 80px;
+    margin: 0 5px;
+	font-size: 20px;	    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 17px;
+    padding:  6px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;    
+    border: 3px;
+}
+
+#logo{
+    background-color: teal;
+    text-transform: none;
+    width: 260px;
+    height:80px;
+}
+
+#slider{    
+    margin-top: 8%;
+    width: 85%;   
+    height: 25vw;
+    max-height: 350px;
+    position: relative;
+    left: 7%;
+}
+
+#slider img{  
+    position:absolute;
+    width: 96%;
     height: 100%;
 
     object-fit: cover;
     opacity: 0;
 
     transition: opacity 1000ms;
+
+    
 }
 
 #slider img.selected{
     opacity: 1;
 }
 
-.buttonBackNext{    
-    border:none;
+#slider button{    
+    border: none;
     outline: none;
     background-color: white;
-    font-size: 120%;
-    color:black;
-    margin-top: 10%;
-    height: 35vw;
-    max-height: 400px;
+    font-size: 150%;
+    color:black; 
+    width: 1.5%;
+    height: 100%;
+    position:relative;        
 }
 
-.menu{
-    width: 100%;
-    height: 2cm;
-    background-color: rgba(30,50,30,.4);
-    position:fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;    
+#btnNext{    
+    float: right;   
+    position: fixed;
+    
 }
 
-ul{    
-    margin-left: 750px;
-    margin-top: -3.9%;       
+.checkbtn{    
+    font-size: 30px;
+    color: white;
+    width: 15px;
+    height: 20px;
+    float: right;
+    
+    margin-top: 1%;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
-ul li{    
-	display:inline-block;	
-	font-size: 20px;
-	text-align:center;
-    width: 3cm;
+#menuicon{
+    width: 45px;
+    height: 45px;
+}
+
+#check{
+    display: none;
+}
+
+@media(max-width: 952){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 952){
+   .checkbtn{
+       display: block;
+   }
+
+   ul{
+       position: fixed;
+       width: 100%;
+       height: 100vh;
+       background: #2c3e50;
+       top: 80px;
+       left: 0;
+       text-align: center;
+   }
+
+   nav ul li{
+       display: block;
+   }
 }

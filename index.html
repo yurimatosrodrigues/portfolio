@@ -2,39 +2,44 @@
 <html lang = "pt-br">
     <head>
         <meta charset="utf-8"/>
-        <meta name = "viewport" content="width=device-width,initial-scale=1"/>        
+        <meta name = "viewport" content="width=device-width,initial-scale=1"/>  
         <title> Home - Yuri </title>        
         <link rel = "stylesheet" href = "Outside/style.css"/>
+        
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-
-        <header>                
-            <div id = "menu" class = "menu">
-                <a href = "index.html"> <img id= "logo" src ="images/logo.png" width="260px" height="80px" title="logo"/> </a>
-                <nav>
-                    <ul>
-                        <li> <a href="./index.html"> Home </a> </li> 
-                        <li> <a href="./about.html"> Sobre </a> </li>
-                        <li> <a href="./projects.html"> Projetos </a> </li>                                                         
-                        <li> <a href="./contact.html"> Contato </li> </a> 
-                    </ul>
-                </nav>                
-            </div>
-        </header>
+        <header>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <img id= "menuicon" src ="images/menuicon.png"/> 
+                </label>
+                
+                <img id= "logo" src ="images/logo.png" title="logo"/> 
+                
+                <ul>
+                    <li> <a class = "active" href="./index.html"> Home </a> </li> 
+                    <li> <a href="./about.html"> Sobre </a> </li>
+                    <li> <a href="./projects.html"> Projetos </a> </li>                                                         
+                    <li> <a href="./contact.html"> Contato </a> </li> 
+                </ul>
+            </nav>   
+        </header>  
+        <div id="slider">              
+            <button id = "btnBack" class = "buttonBackNext"> < </button> &nbsp;
+            <img class="selected" src ="images/granturismo.jpg"/> 
+            <img src ="images/godofwar2.jpg"/> 
+            <img src ="images/assassinscreed.jpg"/>
+            <button id = "btnNext"> > </button>
+        </div>      
         
-        <button id = "btnBack" class = "buttonBackNext""> < </button> &nbsp;       
-
-            <div id="slider">
-                <img class="selected" src ="images/granturismo.jpg"/> 
-                <img src ="images/godofwar2.jpg"/> 
-                <img src ="images/assassinscreed.jpg"/>  
-            </div> 
-        &nbsp;
-        <button id = "btnNext" class = "buttonBackNext"> > </button>
+        <footer>
             
-
-        <script src="Outside/script.js"></script>        
+        </footer>
+      
+      <script src="Outside/script.js"></script>        
     </body>    
 
 </html>
