@@ -1,54 +1,58 @@
-*{padding:0; margin: 0;}
-
 body{
-   
-    flex-direction: center;
-    justify-content: center;
+    margin: 0;
+}
+
+h1{
+    color: #fff;
+    margin: 0;    
+}
+
+nav{
+    background-color: #161616;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+ul{    
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav,ul{
     align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 
-
-nav{   
-    margin-top: 0%;
-    background-color: teal;
-    height: 80px;
-    width: 100%;
-    opacity: 90;
+li{
+    padding: 0 20px;
 }
 
-nav ul{
-    float: right;
-    margin-right: 50px;
-}
-
-nav ul li{    
-	display:inline-block;	
-    line-height: 80px;
-    margin: 0 5px;
-	font-size: 20px;	    
-}
-
-nav ul li a{
+a{    
     text-decoration: none;
-    color:white;
-    font-size: 17px;
-    padding:  6px 10px;
-    border-radius: 3px;
-    text-transform: uppercase;
 }
 
-a.active,a:hover{
-    background: #1b9bff;
-    transition: .5s;    
-    border: 3px;
+h1:hover, button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(255,255,255,0.2);
 }
 
-#logo{
-    background-color: teal;
-    text-transform: none;
-    width: 260px;
-    height:80px;
+button{
+    border: none; 
+    background-color: transparent;
+    color: #fff;   
+    
 }
+
+.btnMenu{
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    display: none;
+}
+
 
 #slider{    
     margin-top: 8%;
@@ -63,23 +67,19 @@ a.active,a:hover{
     position:absolute;
     width: 96%;
     height: 100%;
-
     object-fit: cover;
     opacity: 0;
-
-    transition: opacity 1000ms;
-
-    
+    transition: opacity 1000ms;    
 }
 
 #slider img.selected{
     opacity: 1;
 }
 
-#slider button{    
-    border: none;
-    outline: none;
-    background-color: white;
+#slider button{   
+    border: none; 
+    background-color: transparent;
+    outline: none;   
     font-size: 150%;
     color:black; 
     width: 1.5%;
@@ -93,55 +93,32 @@ a.active,a:hover{
     
 }
 
-.checkbtn{    
-    font-size: 30px;
-    color: white;
-    width: 15px;
-    height: 20px;
-    float: right;
-    
-    margin-top: 1%;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+.btnMenu:focus ~ul{
+    height: 195px;
 }
 
-#menuicon{
-    width: 45px;
-    height: 45px;
-}
 
-#check{
-    display: none;
-}
-
-@media(max-width: 952){
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
+@media(max-width: 700px){
+    h1{
+        margin:10px;        
     }
-    nav ul li a{
-        font-size: 16px;
+    nav{
+        padding: 0;
+        align-items: flex-start;      
     }
-}
+    ul{
+        text-align: center;
+        margin:0;
+        height: 0;
+    }   
+    nav, ul{
+        flex-direction: column;        
+    }
+    .btnMenu{
+        display: flex;
+    }
 
-@media(max-width: 952){
-   .checkbtn{
-       display: block;
-   }
-
-   ul{
-       position: fixed;
-       width: 100%;
-       height: 100vh;
-       background: #2c3e50;
-       top: 80px;
-       left: 0;
-       text-align: center;
-   }
-
-   nav ul li{
-       display: block;
-   }
+    ul, li{        
+        width: 100%;        
+    }
 }
