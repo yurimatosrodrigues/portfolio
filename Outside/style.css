@@ -54,17 +54,22 @@ button{
 }
 
 
-#slider{    
+#slider{       
+    background-color:#B66ACD;
+    align-items: center;
+    position:fixed;
+    width: 100%;
+    height: 100%;
     padding:0;    
     align-self: center;
-    margin: 0;
-    
+    margin: 0;    
 }
 
 #slider img{  
+    align-items: center;
     position:absolute;
     width: 100%;
-    height: 80%;
+    height: 84%;
     object-fit: cover;
     opacity: 0;
     transition: opacity 1000ms;  
@@ -79,6 +84,7 @@ button{
 }
 
 #slider button{
+    
     padding:0%;    
     border: none; 
     background-color: transparent;
@@ -90,13 +96,19 @@ button{
     position:absolute;
 }
 
-#btnNext{    
+#btnNext{      
     margin-left: 98%;    
 }
 
 .btnMenu:focus ~ul{
     height: 195px;
 }
+
+.projects{
+
+    
+}
+
 
 
 @media(max-width: 700px){
