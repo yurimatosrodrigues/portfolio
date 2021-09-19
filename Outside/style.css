@@ -2,6 +2,12 @@ body{
     margin: 0;
 }
 
+#container{    
+    padding: 0;      
+    position: relative;
+    height: 5000px;    
+}
+
 h1{
     color: #fff;
     margin: 0;    
@@ -13,7 +19,7 @@ nav{
     justify-content: space-between;
 }
 
-ul{    
+ul{
     list-style: none;
     padding: 0;
     overflow: hidden;
@@ -54,29 +60,22 @@ button{
 }
 
 
-#slider{       
-    background-color:#B66ACD;
-    align-items: center;
-    position:fixed;
-    width: 100%;
-    height: 100%;
+#slider{
     padding:0;    
-    align-self: center;
-    margin: 0;    
-}
-
-#slider img{  
-    align-items: center;
     position:absolute;
     width: 100%;
+    height: 700px;
+}
+
+#slider img{
+    position:absolute;
+    width: 90%;
     height: 84%;
     object-fit: cover;
     opacity: 0;
     transition: opacity 1000ms;  
-    margin-top: 2%;  
-
-    flex-direction: column;  
-    
+    margin-top: 2%;      
+    margin-left: 4.8%;    
 }
 
 #slider img.selected{
@@ -84,31 +83,45 @@ button{
 }
 
 #slider button{
-    
-    padding:0%;    
+    padding:0;
+    margin-top: 2%;  
     border: none; 
     background-color: transparent;
     outline: none;   
     font-size: 150%;
     color:black; 
     width: 1.5%;
-    height: 80%;
-    position:absolute;
+    height: 84%;
+    position:absolute;    
+}
+
+#btnBack{
+    margin-left: 2%;
 }
 
 #btnNext{      
-    margin-left: 98%;    
+    margin-left: 96%;    
 }
 
 .btnMenu:focus ~ul{
     height: 195px;
 }
 
-.projects{
-
+#about{
     
+    padding: 0;
+    position:relative;
+    top: 700px;
+    width: 100%;
+    height: 750px;
+    background-color: burlywood;    
 }
 
+#perfil{
+    float: left;
+    width: 35%;
+    height: 85%;
+}
 
 
 @media(max-width: 700px){
@@ -125,7 +138,7 @@ button{
         height: 0;
     }   
     nav, ul{
-        flex-direction: column;       
+        flex-direction: column;
     }
     .btnMenu{
         display: flex;
