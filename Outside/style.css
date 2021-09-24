@@ -132,6 +132,11 @@ p{
     font-size: 40px;
 }
 
+
+footer{
+    margin-top: 800px;
+}
+
 html{
     scroll-behavior: smooth;
 }
