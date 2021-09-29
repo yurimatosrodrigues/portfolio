@@ -8,9 +8,15 @@ body{
     height: 5000px;    
 }
 
-h1{
+.header-title{
     color: #fff;
-    margin: 0;    
+    margin: 0;
+}
+
+.header-title:hover, button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(255,255,255,0.2);
 }
 
 nav{
@@ -37,12 +43,6 @@ li{
 
 a{    
     text-decoration: none;
-}
-
-h1:hover, button:hover{
-    cursor: pointer;
-    opacity: 0.8;
-    background-color: rgba(255,255,255,0.2);
 }
 
 button{
@@ -132,6 +132,22 @@ p{
     font-size: 40px;
 }
 
+.automaticText::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: blink .7s infinite;
+}
+
+@keyframes blink{
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }    
+}
+
 
 footer{
     margin-top: 800px;
@@ -142,7 +158,7 @@ html{
 }
 
 @media(max-width: 700px){
-    h1{
+    .header-title{
         margin:10px;        
     }
     nav{

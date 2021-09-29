@@ -5,30 +5,44 @@
         <meta name = "viewport" content="width=device-width,initial-scale=1.0"/>
         <title> Home - Yuri </title>
         <link rel = "stylesheet" href = "Outside/style.css"/>
-        
-        
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
     </head>
 
     <body>
         <header>
-            <nav>                
+            <nav>
                 <div class="logo">
-                    <h1> TUTI</h1>
+                    <h1 class = "header-title"> TUTI</h1>
                 </div>
 
                 <button class="btnMenu">&#9776;</button>
 
                 <ul>
-                    <li> <a class = "active" href="./index.html"> <h1>Home</h1> </a> </li> 
-                    <li> <a href="#about"> <h1> Sobre </h1> </a> </li>
-                    <li> <a href="./projects.html"> <h1>Projetos</h1> </a> </li>                                                         
-                    <li> <a href="./contact.html"> <h1> Contato </h1> </a> </li> 
+                    <li> 
+                        <a class = "active" href="./index.html"> 
+                            <h1 class = "header-title">Home</h1> 
+                        </a> 
+                    </li> 
+                    <li>
+                        <a href="#about"> 
+                            <h1 class = "header-title"> Sobre </h1> 
+                        </a> 
+                    </li class = "header-title">
+                    <li> 
+                        <a href="./projects.html"> 
+                            <h1 class = "header-title">Projetos</h1> 
+                        </a> 
+                    </li>
+                    <li> 
+                        <a href="./contact.html"> 
+                            <h1 class = "header-title"> Contato </h1> 
+                        </a>
+                    </li>
                 </ul>
             </nav>   
         </header> 
 
         <div id="container">
-    
             <div id="slider">
                 <img class="selected" src ="images/granturismo.jpg"/> 
                 <img src ="images/godofwar2.jpg"/> 
@@ -43,31 +57,41 @@
             </div> 
             
 
-            <div id="about">
-            
+            <div id="about">            
                 <img id="perfil" src="images/yuri.jpg"/>
 
+                <p>Sobre mim...</p>
+
                 <p class = "automaticText">
-                    Sobre mim... <br/><br/>
                     Em 2015 iniciei minha trajetória na área de tecnologia, com o curso técnico de informática pela ETEC BG.
-                    Desde então, me dediquei aos estudos, buscando o aperfeiçoamento acadêmico e profissional.
-                    Atuo como desenvolvedor .NET desde janeiro de 2019 até o momento. 
-                    Concluí o curso superior de Análise e Desenvolvimento de Sistemas, pela FATEC-SP, em dezembro de 2019.
-                    E não parei por aí... em junho desse ano (2021) concluí o curso de especialização em desenvolvimento para smartphones, com foco em Flutter...
-                    Para o futuro, pretendo fazer uma pós em segurança da informação, tema do qual sou entusiasta!                    
+                    Formado em Análise e Desenvolvimento de Sistemas, pela FATEC-SP, em dezembro de 2019, 
+                    e atuo como desenvolvedor .NET desde janeiro de 2019 até o momento.
+                    No 1º semestre de 2021, concluí o curso de especialização em desenvolvimento para smartphones, com foco em Flutter.
+                    Para o futuro, pretendo fazer uma pós em segurança da informação, tema do qual sou entusiasta!
                 </p>
             </div>
             
                 
             <footer>
-                LinkedIn: <a href="https://www.linkedin.com/in/yurimatosrodrigues"> Yuri Matos Rodrigues </a>
-            </footer>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/yurimatosrodrigues" title="GitHub" target="_blank">
+                                <i class = "fa fa-github"></i> 
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="https://www.linkedin.com/in/yurimatosrodrigues" title="LinkedIn" target="_blank">
+                                <i class = "fa fa-linkedin"></i> 
+                            </a> 
+                        </li>
+                    </ul>
 
+                    <span>© Todos os Diretos Reservados - Yuri Matos Rodrigues</span>
+                </div>                                
+            </footer>
         </div>
 
-        
-      
       <script src="Outside/script.js"></script>        
-    </body>    
-
+    </body>
 </html>

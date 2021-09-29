@@ -6,6 +6,8 @@ let time = 3000,
     btnBack = document.getElementById("btnBack"),
     btnNext = document.getElementById("btnNext")
 
+const about = document.querySelector('.automaticText');
+
 function start(){  
     console.log(max);
     setInterval(() =>{
@@ -45,5 +47,16 @@ function backImage(){
         .classList.add("selected")
 }
 
+function automaticText(element){
+    const textArray = element.innerHTML.split('');
+    element.innerHTML = '';
+    textArray.forEach((letter, i) => {
+        setTimeout(function(){
+            element.innerHTML += letter;
+        }, 75 * i);
+    });    
+}
+
+automaticText(about);
 
 window.addEventListener("load",start)
