@@ -59,12 +59,17 @@ button{
     display: none;
 }
 
+#intro{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    height: 650px;
+}
 
 #slider{
-    padding:0;    
-    position:absolute;
+    padding:0;
+    position:relative;
     width: 100%;
-    height: 650px;
+    height: 100%;    
 }
 
 #slider img{
@@ -107,29 +112,31 @@ button{
     height: 195px;
 }
 
-#about{
-    padding: 0;
-    position:relative;
-    top: 700px;
-    width: 100%;
-    height: 750px;
-    background-color:whitesmoke;
-    transition: all 10s ease-in 0;
+#profile{
+    margin-bottom: 3rem;
 }
 
-#perfil{
+#about{
+    padding: 0;
+    position:relative;   
+    width: 100%;
+    height: 750px;
+    background-color:whitesmoke;    
+}
+
+.perfil{
     float: left;
     width: 35%;
     height: 85%;
     margin-left: 15px;
-    padding-top: 55px;    
-}
+    padding-top: 55px;
+    border-radius: 30%;
+}  
 
 p{
     font-family:RockWell, Helvetica,Arial;
-    text-align: center;
-    
-    font-size: 40px;
+    text-align: center;    
+    font-size: 2em;
 }
 
 .automaticText::after{
@@ -137,6 +144,10 @@ p{
     margin-left: 5px;
     opacity: 1;
     animation: blink .7s infinite;
+}
+
+.skills{
+    flex-direction:column;
 }
 
 @keyframes blink{
@@ -148,9 +159,9 @@ p{
     }    
 }
 
-
 footer{
-    margin-top: 800px;
+    display: flex;
+    justify-content: center;
 }
 
 html{
@@ -159,7 +170,7 @@ html{
 
 @media(max-width: 700px){
     .header-title{
-        margin:10px;        
+        margin: 10px;        
     }
     nav{
         padding: 0;
@@ -176,9 +187,14 @@ html{
     .btnMenu{
         display: flex;
     }
-
-    ul, li{        
+    ul, li{
         width: 100%;        
+    }
+    #intro{
+        height: 350px;
+    }
+    p{        
+        font-size: 1.5em;
     }
 }
 
