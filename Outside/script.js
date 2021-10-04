@@ -53,7 +53,7 @@ function automaticText(element){
     textArray.forEach((letter, i) => {
         setTimeout(function(){
             element.innerHTML += letter;
-        }, 75 * i);
+        }, 60 * i);
     });    
 }
 

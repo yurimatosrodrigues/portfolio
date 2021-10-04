@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+    color: #fff;
+}
+
 body{
     margin: 0;
 }
@@ -121,17 +126,19 @@ button{
     position:relative;   
     width: 100%;
     height: 750px;
-    background-color:whitesmoke;    
+    background-color:black;    
 }
 
 .perfil{
     float: left;
-    width: 35%;
-    height: 85%;
-    margin-left: 15px;
-    padding-top: 55px;
-    border-radius: 30%;
-}  
+    max-width: 380px;
+    max-height: 380px;
+    width: 20%;
+    height: auto;
+    margin-left: 2%;
+    padding-top: 35px;
+    border-radius: 40%;
+}
 
 p{
     font-family:RockWell, Helvetica,Arial;
@@ -139,15 +146,29 @@ p{
     font-size: 2em;
 }
 
+h4,h5{
+    color: #fff;
+}
+
+.text-about{
+    position:relative;
+    margin-left: 25%;
+    margin-right: 2%;
+    width:auto;
+    height: auto;
+}
+
+.automaticText{    
+    font-size: 1.5em;
+    color: green;    
+    text-align: justify;
+}
+
 .automaticText::after{
     content: '|';
     margin-left: 5px;
     opacity: 1;
-    animation: blink .7s infinite;
-}
-
-.skills{
-    flex-direction:column;
+    animation: blink .7s infinite;    
 }
 
 @keyframes blink{
@@ -159,13 +180,36 @@ p{
     }    
 }
 
+.skills{
+    
+    margin-left: 25%;
+    margin-right: 2%;
+    
+    
+}
+
+.ul-skills{
+    padding: 10px;    
+    flex-direction:row;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-left: 14%;
+}
+
+.table-skills{
+    border:1px solid white;
+    width: 150px;
+    height: 10px;
+    font-size: 10px;
+}
+
+.skill-competence{
+    background-color: green;        
+}
+
 footer{
     display: flex;
     justify-content: center;
-}
-
-html{
-    scroll-behavior: smooth;
 }
 
 @media(max-width: 700px){
@@ -195,6 +239,10 @@ html{
     }
     p{        
         font-size: 1.5em;
+    }
+    
+    .automaticText{
+        font-size: 0.8em;
     }
 }
 
