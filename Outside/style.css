@@ -8,7 +8,7 @@ body{
 }
 
 #container{    
-    padding: 0;      
+    padding: 0;
     position: relative;
     height:2500px;    
 }
@@ -129,17 +129,6 @@ button{
     background-color:black;    
 }
 
-.perfil{
-    float: left;
-    max-width: 380px;
-    max-height: 380px;
-    width: 20%;
-    height: auto;
-    margin-left: 2%;
-    padding-top: 35px;
-    border-radius: 90%;
-}
-
 p{
     font-family:RockWell, Helvetica,Arial;
     text-align: center;    
@@ -148,6 +137,49 @@ p{
 
 h4,h5{
     color: #fff;
+}
+
+/*Page ABOUT*/
+.personal-infos{
+    float: left;
+    background-color: red;
+    height: 100%;
+    width: 25%;
+}
+
+.perfil{    
+    max-width: 380px;
+    max-height: 380px;
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    padding-top: 35px;
+    border-radius: 90%;
+}
+
+.general-infos{
+    display:flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 90%;    
+}
+
+.skills{ 
+    margin-left: 25%;
+    margin-right: 2%;    
+    height: 500px;
+    width: 70%;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-template-columns{
+    margin-left: 15%;       
+	grid-template-columns: repeat(auto-fit, 200px);
 }
 
 .text-about{
@@ -180,43 +212,19 @@ h4,h5{
     }    
 }
 
-.skills{ 
-    margin-left: 25%;
-    margin-right: 2%;    
-    height: 500px;
-    width: 70%;
-}
-
-.ul-skills{
-    display:flex;
-    padding: 10px;    
-    flex-direction:row;
-    font-size: 1.4rem;
-    text-align: center;
-    margin-left: 14%;
-}
-
 .table-skills{
     border:1px solid white;
     width: 150px;
     height: 10px;
-    font-size: 10px;
+    font-size: 10px;    
 }
 
 .skill-competence{
     background-color: green;        
 }
+/*Page ABOUT*/
 
-.general-infos{    
-    display:flex;
-    float: left;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top:  23%;
-    margin-left: -17%;
-    font-size: 90%;    
-}
+
 
 h1, h3, h4{
     margin:0;
@@ -271,15 +279,12 @@ footer{
         text-align: center;
         margin-left: 14%;
     }
-    .table-skills{
+    .table-skills{        
         position: relative;
         margin-left: 90px;        
         
     }
-    .general-infos{
-        margin-top:  27%;
-        font-size: 55%;
-    }
+   
 }
 
 
