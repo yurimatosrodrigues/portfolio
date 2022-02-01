@@ -1,3 +1,4 @@
+/*<LAYOUT>*/
 html{
     scroll-behavior: smooth;
     color: #fff;
@@ -13,6 +14,31 @@ body{
     height:2500px;    
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+/*</LAYOUT>*/
+
+/*<RESETS>*/
+a{    
+    text-decoration: none;
+}
+
+p{
+    font-family:RockWell, Helvetica,Arial;
+    text-align: center;    
+    font-size: 2em;
+}
+
+h1, h3, h4{
+    margin:0;
+    color: #fff;
+}
+/*</RESETS>*/
+
+/*<HOME>*/
 .header-title{
     color: #fff;
     margin: 0;
@@ -44,10 +70,6 @@ nav,ul{
 
 li{
     padding: 0 20px;
-}
-
-a{    
-    text-decoration: none;
 }
 
 button{
@@ -116,7 +138,11 @@ button{
 .btnMenu:focus ~ul{
     height: 195px;
 }
+/*</HOME>*/
 
+
+
+/*<ABOUT>*/
 #profile{
     margin-bottom: 3rem;
 }
@@ -129,22 +155,10 @@ button{
     background-color:black;    
 }
 
-p{
-    font-family:RockWell, Helvetica,Arial;
-    text-align: center;    
-    font-size: 2em;
-}
-
-h4,h5{
-    color: #fff;
-}
-
-/*Page ABOUT*/
 .personal-infos{
-    float: left;
-    background-color: red;
+    float: left;    
     height: 100%;
-    width: 25%;
+    width: 30%;
 }
 
 .perfil{    
@@ -168,9 +182,11 @@ h4,h5{
 
 .skills{ 
     margin-left: 25%;
-    margin-right: 2%;    
+    margin-right: 2%;
+    margin-top: 12%;
     height: 500px;
     width: 70%;
+
 }
 
 .grid{
@@ -187,7 +203,7 @@ h4,h5{
     margin-left: 25%;
     margin-right: 2%;
     width:auto;
-    height: auto;
+    height: 90px;
 }
 
 .automaticText{    
@@ -222,20 +238,11 @@ h4,h5{
 .skill-competence{
     background-color: green;        
 }
-/*Page ABOUT*/
+/*</ABOUT>*/
 
 
 
-h1, h3, h4{
-    margin:0;
-}
-
-footer{
-    display: flex;
-    justify-content: center;
-    background-color: black;
-}
-
+/*<MEDIAQUERY>*/
 @media(max-width: 700px){
     .header-title{
         margin: 10px;        
@@ -282,9 +289,11 @@ footer{
     .table-skills{        
         position: relative;
         margin-left: 90px;        
+    }   
         
+    .general-infos{        
+        margin-top: 10px;
+        font-size: 70%;    
     }
-   
 }
-
-
+/*</MEDIAQUERY>*/
