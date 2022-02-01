@@ -155,13 +155,13 @@ button{
     background-color:black;    
 }
 
-.personal-infos{
-    float: left;    
-    height: 100%;
+.card-personal{
+    float:left;        
+    height: 70%;
     width: 30%;
 }
 
-.perfil{    
+.card-perfil{    
     max-width: 380px;
     max-height: 380px;
     width: 80%;
@@ -171,31 +171,53 @@ button{
     border-radius: 90%;
 }
 
-.general-infos{
-    display:flex;    
+.card-infos{
+    display:block;    
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    font-size: 90%;    
-}
-
-.skills{ 
-    margin-left: 25%;
-    margin-right: 2%;
-    margin-top: 12%;
-    height: 500px;
-    width: 70%;
-
+    width: 100%;    
+    text-align: center;
+    word-wrap: break-word;
 }
 
 .grid{
     display: grid;
 }
 
-.grid-template-columns{
+.skills{ 
+    float: right;
+    
+    margin-top: 2%;
+    height: 44%;
+    width: 70%;
+}
+
+.table-skills{
+    width: 150px;
+    border-collapse: collapse;
+}
+
+.skill-competence{    
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;    
+    background-color: green;        
+    height: 10px;    
+}
+
+.skill-no-competence{    
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    background-color: black;    
+}
+
+.grid-template-columns{    
     margin-left: 15%;       
-	grid-template-columns: repeat(auto-fit, 200px);
+	grid-template-columns: repeat(auto-fit, 250px);   
+    grid-row-gap: 20%; 
 }
 
 .text-about{
@@ -206,7 +228,7 @@ button{
     height: 90px;
 }
 
-.automaticText{    
+.automaticText{
     font-size: 1.5em;
     color: green;    
     text-align: justify;
@@ -228,16 +250,7 @@ button{
     }    
 }
 
-.table-skills{
-    border:1px solid white;
-    width: 150px;
-    height: 10px;
-    font-size: 10px;    
-}
 
-.skill-competence{
-    background-color: green;        
-}
 /*</ABOUT>*/
 
 
