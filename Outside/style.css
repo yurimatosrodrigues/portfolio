@@ -141,13 +141,13 @@ button{
 /*</HOME>*/
 
 
-
 /*<ABOUT>*/
-#profile{
-    margin-bottom: 3rem;
+#profile{    
+    background-color: black;
+    height: 50%;
 }
 
-#about{
+#about-section{
     padding: 0;
     position:relative;   
     width: 100%;
@@ -161,14 +161,16 @@ button{
     width: 30%;
 }
 
-.card-perfil{    
-    max-width: 380px;
-    max-height: 380px;
+.card-perfil{
+    max-width: 370px;
+    max-height: 370px;
     width: 80%;
     height: auto;
-    margin-left: 10%;
     padding-top: 35px;
-    border-radius: 90%;
+    border-radius: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .card-infos{
@@ -182,50 +184,10 @@ button{
     word-wrap: break-word;
 }
 
-.grid{
-    display: grid;
-}
-
-.skills{ 
-    float: right;
-    
-    margin-top: 2%;
-    height: 44%;
+.about{
+    float:right;
     width: 70%;
-}
-
-.table-skills{
-    width: 150px;
-    border-collapse: collapse;
-}
-
-.skill-competence{    
-    border-left: 1px solid white;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;    
-    background-color: green;        
-    height: 10px;    
-}
-
-.skill-no-competence{    
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    border-right: 1px solid white;
-    background-color: black;    
-}
-
-.grid-template-columns{    
-    margin-left: 15%;       
-	grid-template-columns: repeat(auto-fit, 250px);   
-    grid-row-gap: 20%; 
-}
-
-.text-about{
-    position:relative;
-    margin-left: 25%;
-    margin-right: 2%;
-    width:auto;
-    height: 90px;
+    height: 35%;
 }
 
 .automaticText{
@@ -250,13 +212,49 @@ button{
     }    
 }
 
+.skills{ 
+    float: right;    
+    height: 65%;
+    width: 70%;    
+}
+
+.grid{  
+    display: grid;   
+    justify-content: center;
+}
+
+.grid-template-columns{    
+ 	grid-template-columns: repeat(auto-fit, 250px);   
+    grid-row-gap: 20%; 
+}
+
+.table-skills{
+    width: 150px;
+    border-collapse: collapse;
+}
+
+.skill-competence{    
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;    
+    background-color: green;        
+    height: 10px;    
+}
+
+.skill-no-competence{    
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    background-color: black;    
+}
+
 
 /*</ABOUT>*/
 
 
 
 /*<MEDIAQUERY>*/
-@media(max-width: 700px){
+@media(max-width: 800px){
     .header-title{
         margin: 10px;        
     }
@@ -284,29 +282,21 @@ button{
     p{        
         font-size: 1.5em;
     }    
+
+    .card-personal, .about, .skills{       
+        width: 100%;
+    } 
+
+
+
     .automaticText{
-        font-size: 0.8em;
-    }    
-    .skills{
-        height: 250px;
+        font-size: 1.0em;
+    }     
+    
+    .grid-template-columns{    
+        grid-template-columns: repeat(auto-fit, 250px);   
+        grid-row-gap: 5%; 
     }
-    .ul-skills{
-        display:inline;
-        justify-content: center;
-        flex-direction:column;
-        align-self: center;
-        font-size: 1rem;
-        text-align: center;
-        margin-left: 14%;
-    }
-    .table-skills{        
-        position: relative;
-        margin-left: 90px;        
-    }   
-        
-    .general-infos{        
-        margin-top: 10px;
-        font-size: 70%;    
-    }
+    
 }
 /*</MEDIAQUERY>*/
