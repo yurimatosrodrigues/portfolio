@@ -60,6 +60,7 @@ ul{
     list-style: none;
     padding: 0;
     overflow: hidden;
+    transition: all .5s;
 }
 
 nav,ul{
@@ -75,8 +76,7 @@ li{
 button{
     border: none; 
     background-color: transparent;
-    color: #fff;   
-    
+    color: #fff;     
 }
 
 .btnMenu{
@@ -84,6 +84,10 @@ button{
     position: absolute;
     right: 10px;
     display: none;
+}
+
+.btnMenu:focus ~ul{
+    height: 195px;
 }
 
 #intro{
@@ -134,10 +138,6 @@ button{
 #btnNext{      
     margin-left: 96%;    
 }
-
-.btnMenu:focus ~ul{
-    height: 195px;
-}
 /*</HOME>*/
 
 
@@ -157,8 +157,8 @@ button{
 
 .card-personal{
     float:left;        
-    height: 70%;
-    width: 30%;
+    height: 65%;
+    width: 30%;    
 }
 
 .card-perfil{
@@ -170,7 +170,7 @@ button{
     border-radius: 90%; 
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    display: block;    
 }
 
 .card-infos{
@@ -181,7 +181,11 @@ button{
     margin-top: 10px;
     width: 100%;    
     text-align: center;
-    word-wrap: break-word;
+    word-wrap: break-word;    
+}
+
+.card-infos-text{
+    padding-top:10px;
 }
 
 .about{
@@ -214,23 +218,25 @@ button{
 
 .skills{ 
     float: right;    
-    height: 65%;
-    width: 70%;    
+    height: 50%;
+    width: 70%; 
 }
 
 .grid{  
-    display: grid;   
+    display: grid;           
+    height: 55%;        
     justify-content: center;
+    align-items:center;    
 }
 
 .grid-template-columns{    
- 	grid-template-columns: repeat(auto-fit, 250px);   
-    grid-row-gap: 20%; 
+ 	grid-template-columns: repeat(auto-fit, 250px);        
+    /*grid-row-gap: 2%; */
 }
 
 .table-skills{
     width: 150px;
-    border-collapse: collapse;
+    border-collapse: collapse;    
 }
 
 .skill-competence{    
@@ -248,9 +254,7 @@ button{
     background-color: black;    
 }
 
-
 /*</ABOUT>*/
-
 
 
 /*<MEDIAQUERY>*/
@@ -274,29 +278,32 @@ button{
         display: flex;
     }
     ul, li{
-        width: 100%;        
+        width: 100%;
     }
     #intro{
-        height: 350px;
+        height: 350px;        
     }
-    p{        
+    p{
         font-size: 1.5em;
-    }    
+    }     
+        
+    .card-perfil{
+        max-width: 250px;
+        max-height: 250px;
+        width: 75%;
+    }
 
-    .card-personal, .about, .skills{       
+    .card-personal, .about, .skills{
         width: 100%;
     } 
 
-
-
     .automaticText{
-        font-size: 1.0em;
-    }     
+        font-size: 1.2em;
+    }    
     
     .grid-template-columns{    
         grid-template-columns: repeat(auto-fit, 250px);   
-        grid-row-gap: 5%; 
-    }
-    
+        grid-row-gap: 5%;        
+    }    
 }
 /*</MEDIAQUERY>*/
