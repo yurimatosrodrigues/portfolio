@@ -259,12 +259,17 @@ button{
 
 /*</ABOUT>*/
 
+/*<PROJECTS>*/
+#projects{
+    margin: 0;
+    padding: 0;
+    height: 25%;    
+}
+/*</PROJECTS>*/
+
 
 /*<MEDIAQUERY>*/
-@media(max-width: 800px){
-    .container{
-        background-color: blue;       
-    }
+@media(max-width: 800px){    
     footer{
         height: 10%;
     }
@@ -304,7 +309,7 @@ button{
     }
 
     .about{
-        height: 25%;        
+        height: 23%;        
     }
         
     .card-perfil{
@@ -314,7 +319,7 @@ button{
     }
 
     .skills{
-        height: 35%;
+        height: 37%;
         padding-top: 5%;
     }
     .card-personal, .about, .skills{
