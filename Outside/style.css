@@ -1,24 +1,33 @@
 /*<LAYOUT>*/
-html{
+
+html{    
     scroll-behavior: smooth;
     color: #fff;
 }
 
-body{
+body{    
     margin: 0;
+    height: 2000px;
 }
 
-#container{    
-    padding: 0;
-    position: relative;
-    height:2500px;    
+.container{    
+    height: 100%;    
 }
 
 footer{
-    display: flex;
+    display: flex;    
     justify-content: center;
     background-color: black;
+    width: 100%;
+    height: 7%;    
+    text-align: center;    
 }
+
+.footer-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 15px 0 0;
+  }
 /*</LAYOUT>*/
 
 /*<RESETS>*/
@@ -27,6 +36,10 @@ a{
 }
 
 p{
+    text-align: center;
+}
+
+.title{
     font-family:RockWell, Helvetica,Arial;
     text-align: center;    
     font-size: 2em;
@@ -91,13 +104,10 @@ button{
 }
 
 #intro{
-    margin-bottom: 3rem;
-    margin-top: 2rem;
-    height: 650px;
+    height: 35%;
 }
 
-#slider{
-    padding:0;
+#slider{    
     position:relative;
     width: 100%;
     height: 100%;    
@@ -144,21 +154,13 @@ button{
 /*<ABOUT>*/
 #profile{    
     background-color: black;
-    height: 50%;
-}
-
-#about-section{
-    padding: 0;
-    position:relative;   
-    width: 100%;
-    height: 750px;
-    background-color:black;    
+    height: 30%;
 }
 
 .card-personal{
     float:left;        
-    height: 65%;
-    width: 30%;    
+    height: 100%;
+    width: 30%;   
 }
 
 .card-perfil{
@@ -166,7 +168,7 @@ button{
     max-height: 370px;
     width: 80%;
     height: auto;
-    padding-top: 35px;
+    padding-top: 20px;
     border-radius: 90%; 
     margin-left: auto;
     margin-right: auto;
@@ -191,7 +193,7 @@ button{
 .about{
     float:right;
     width: 70%;
-    height: 35%;
+    height: 50%;    
 }
 
 .automaticText{
@@ -204,7 +206,7 @@ button{
     content: '|';
     margin-left: 5px;
     opacity: 1;
-    animation: blink .7s infinite;    
+    animation: blink .7s infinite;
 }
 
 @keyframes blink{
@@ -217,21 +219,22 @@ button{
 }
 
 .skills{ 
-    float: right;    
-    height: 50%;
+    padding: 0;
+    float: right;
     width: 70%; 
+    height: 40%;
 }
 
-.grid{  
-    display: grid;           
-    height: 55%;        
+.grid{ 
+    display: grid;    
+    height: 40%;
     justify-content: center;
     align-items:center;    
 }
 
 .grid-template-columns{    
- 	grid-template-columns: repeat(auto-fit, 250px);        
-    /*grid-row-gap: 2%; */
+ 	grid-template-columns: repeat(auto-fit, 200px);        
+    grid-row-gap: 15%;
 }
 
 .table-skills{
@@ -259,6 +262,12 @@ button{
 
 /*<MEDIAQUERY>*/
 @media(max-width: 800px){
+    .container{
+        background-color: blue;       
+    }
+    footer{
+        height: 10%;
+    }
     .header-title{
         margin: 10px;        
     }
@@ -281,11 +290,22 @@ button{
         width: 100%;
     }
     #intro{
-        height: 350px;        
+        max-height: 400px;
     }
     p{
         font-size: 1.5em;
-    }     
+    }   
+    #profile{         
+        height: 55%;        
+    }    
+        
+    .card-personal{   
+        height: 40%;          
+    }
+
+    .about{
+        height: 25%;        
+    }
         
     .card-perfil{
         max-width: 250px;
@@ -293,6 +313,10 @@ button{
         width: 75%;
     }
 
+    .skills{
+        height: 35%;
+        padding-top: 5%;
+    }
     .card-personal, .about, .skills{
         width: 100%;
     } 
