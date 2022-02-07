@@ -273,14 +273,29 @@ button{
 /*</ABOUT>*/
 
 /*<PROJECTS>*/
-#projects{
+#projects-section{
     height: 30%;
+}
+
+.projects{
+    background-color: darkgrey;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh 50vh; 
+}
+
+.project-item{
+    margin: auto;
+    width: 60%;
+    height: 90%;
+    background-color: aquamarine;
 }
 /*</PROJECTS>*/
 
 
 /*<MEDIAQUERY>*/
-@media(max-width: 800px){    
+@media(max-width: 800px){
     footer{
         height: 10%;
     }
