@@ -242,12 +242,16 @@ button{
     display: grid;    
     height: 40%;
     justify-content: center;
-    align-items:center;    
 }
 
-.grid-template-columns{    
+.grid-template-columns{
  	grid-template-columns: repeat(auto-fit, 200px);        
     grid-row-gap: 15%;
+}
+
+.grid-item{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .table-skills{
@@ -282,13 +286,13 @@ button{
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50vh 50vh; 
+    grid-template-rows: 45vh 45vh;
 }
 
 .project-item{
-    margin: auto;
+    margin: 20px auto 0 auto;
     width: 60%;
-    height: 90%;
+    height: 80%;
     background-color: aquamarine;
 }
 /*</PROJECTS>*/
@@ -335,7 +339,7 @@ button{
     }
 
     .about{
-        height: 23%;        
+        height: 20%;        
     }
         
     .card-perfil{
@@ -345,7 +349,7 @@ button{
     }
 
     .skills{
-        height: 37%;
+        height: 40%;
         padding-top: 5%;
     }
     .card-personal, .about, .skills{
