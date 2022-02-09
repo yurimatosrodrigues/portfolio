@@ -245,7 +245,7 @@ button{
 }
 
 .grid-template-columns{
- 	grid-template-columns: repeat(auto-fit, 200px);        
+ 	grid-template-columns: repeat(auto-fit, 200px);
     grid-row-gap: 15%;
 }
 
@@ -278,30 +278,35 @@ button{
 
 /*<PROJECTS>*/
 #projects-section{
-    height: 30%;
+    height: 34%;    
 }
 
 .projects{
-    background-color: darkgrey;
     height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 45vh 45vh;
+    display: grid;    
+    justify-content: center;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 40vh 40vh;
 }
 
 .project-item{
-    margin: 20px auto 0 auto;
-    width: 60%;
-    height: 80%;
-    background-color: aquamarine;
+    margin:0 auto 0 auto;
+    width: 70%;
+    height: 90%;
+    background-color: aquamarine;    
 }
 /*</PROJECTS>*/
 
 
 /*<MEDIAQUERY>*/
 @media(max-width: 800px){
+    body{    
+        margin: 0;
+        height: 2500px;
+    }
+    
     footer{
-        height: 10%;
+        height: 7%;        
     }
     .header-title{
         margin: 10px;        
@@ -325,13 +330,14 @@ button{
         width: 100%;
     }
     #intro{
-        max-height: 400px;
+        /*max-height: 450px;*/
+        max-height: 15%;
     }
     p{
         font-size: 1.5em;
     }   
     #profile{         
-        height: 55%;        
+        height: 45%;        
     }    
         
     .card-personal{   
@@ -350,7 +356,7 @@ button{
 
     .skills{
         height: 40%;
-        padding-top: 5%;
+        margin-top: 10%;
     }
     .card-personal, .about, .skills{
         width: 100%;
@@ -364,5 +370,20 @@ button{
         grid-template-columns: repeat(auto-fit, 250px);   
         grid-row-gap: 5%;        
     }    
+   
+    #projects-section{
+        height: 33%;        
+    }
+        
+    .projects{
+        height: 90%;
+        grid-template-columns:  1fr;
+        grid-template-rows: 30vh 30vh 30vh 30vh;
+    }
+
+    .project-item{
+        margin:0 auto 0 auto;
+        width: 80%;        
+    }
 }
 /*</MEDIAQUERY>*/
