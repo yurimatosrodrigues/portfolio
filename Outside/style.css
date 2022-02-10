@@ -171,7 +171,7 @@ button{
 }
 
 .card-personal{
-    float:left;        
+    float:left;
     height: 100%;
     width: 30%;   
 }
@@ -211,7 +211,7 @@ button{
 
 .automaticText{
     font-size: 1.5em;
-    color: green;    
+    color: #fff;
     text-align: justify;
 }
 
@@ -292,11 +292,30 @@ button{
 .project-item{
     margin:0 auto 0 auto;
     width: 70%;
-    height: 90%;
-    background-color: aquamarine;    
+    height: 90%;   
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+    border-radius: .5rem; 
+}
+
+.project-item-img img{    
+    overflow: hidden;    
+    object-fit: fill;
+    width: 100%;
+    height: 100%;  
+    transition: 1s; 
+}
+
+.project-item-img img:hover{
+    transform: scale(1.1); 
 }
 /*</PROJECTS>*/
 
+
+/*<CONTACT>*/
+#contact-section{
+    
+}
+/*</CONTACT>*/
 
 /*<MEDIAQUERY>*/
 @media(max-width: 800px){
@@ -306,10 +325,10 @@ button{
     }
     
     footer{
-        height: 7%;        
+        height: 7%;
     }
     .header-title{
-        margin: 10px;        
+        margin: 10px;
     }
     nav{
         padding: 0;
@@ -341,11 +360,11 @@ button{
     }    
         
     .card-personal{   
-        height: 40%;          
+        height: 40%;
     }
 
     .about{
-        height: 20%;        
+        height: 20%;
     }
         
     .card-perfil{
