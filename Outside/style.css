@@ -210,7 +210,8 @@ button{
 .automaticText{
     font-size: 1.5em;
     color: #fff;
-    text-align: justify;
+    text-align: justify;   
+    padding: 0 5% 0 5%; 
 }
 
 .automaticText::after{
@@ -230,7 +231,6 @@ button{
 }
 
 .skills{ 
-    padding: 0;
     float: right;
     width: 70%; 
     height: 40%;
@@ -249,7 +249,7 @@ button{
 
 .grid-item{
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;    
 }
 
 .table-skills{
@@ -262,7 +262,7 @@ button{
     border-top: 1px solid white;
     border-bottom: 1px solid white;    
     background-color: green;        
-    height: 10px;
+    height: 10px;    
 }
 
 .skill-no-competence{    
@@ -292,7 +292,7 @@ button{
     width: 70%;
     height: 90%;   
     box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-    border-radius: .5rem; 
+    
 }
 
 .project-item-img img{    
@@ -301,6 +301,7 @@ button{
     width: 100%;
     height: 100%;  
     transition: 1s; 
+    border-radius: .5rem;
 }
 
 .project-item-img img:hover{
@@ -315,35 +316,49 @@ button{
     background-color:black;
 }
 
-.contact{    
-    height: 100%;    
+.contact{
+    height: 100%;
 }
 
 .contact-form{ 
     display: grid;
     width: 50%;
-    height: 100%;     
     grid-template-columns: 1fr;
     grid-template-rows: 5vh 5vh 5vh 20vh 5vh;
-    grid-row-gap: 20px;
-    margin:auto;
+    grid-row-gap: 30px;
+    margin:auto;            
 }
 
 .contact-input{
     width: 90%;
     margin: 0 auto 0 auto;
+    outline: none;
+    border-radius: .5rem;
+    border: 1.5px solid #fff;
+    font-weight: 600;
+}
+
+.contact-button{
+    width: 20%;
+    border: none;
+    border-radius: .5rem;
+    outline: none;    
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 5%;
+    background-color:#8844ee;
+    color:#fff;
 }
 /*</CONTACT>*/
 
 /*<MEDIAQUERY>*/
-@media(max-width: 800px){
+@media(max-width: 700px){
     body{    
         margin: 0;
-        height: 2500px;
     }
     
     footer{
-        height: 7%;
+        height: 30vh;
     }
     .header-title{
         margin: 10px;
@@ -368,21 +383,22 @@ button{
     }
     #intro{
         /*max-height: 450px;*/
-        max-height: 15%;
+        height: 50vh;
     }
     p{
         font-size: 1.5em;
     }   
     #profile{         
-        height: 45%;        
+        height: 185vh;
     }    
         
     .card-personal{   
-        height: 40%;
+        height: 70vh;
     }
 
     .about{
-        height: 20%;
+        height: 50vh;
+        padding:0
     }
         
     .card-perfil{
@@ -392,15 +408,14 @@ button{
     }
 
     .skills{
-        height: 40%;
-        margin-top: 10%;
+        height: 65vh;        
     }
     .card-personal, .about, .skills{
         width: 100%;
     } 
 
     .automaticText{
-        font-size: 1.2em;
+        font-size: 1.2em;        
     }    
     
     .grid-template-columns{    
@@ -409,18 +424,22 @@ button{
     }    
    
     #projects-section{
-        height: 33%;        
-    }
-        
+        height: 130vh;   
+    }        
     .projects{
         height: 90%;
         grid-template-columns:  1fr;
         grid-template-rows: 30vh 30vh 30vh 30vh;
     }
-
     .project-item{
         margin:0 auto 0 auto;
         width: 80%;        
+    }
+    #contact-section{
+        height: 75vh;
+    }        
+    .contact-form{     
+        width: 80%;    
     }
 }
 /*</MEDIAQUERY>*/
