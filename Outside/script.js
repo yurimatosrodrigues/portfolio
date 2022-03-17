@@ -4,12 +4,13 @@ let time = 3000,
     max = images.length,
     slideActive = true,
     btnBack = document.getElementById("btnBack"),
-    btnNext = document.getElementById("btnNext")
+    btnNext = document.getElementById("btnNext"),
+    elementText=document.querySelector('.automaticText'),
+    countWritedText = 0;
 
-const about = document.querySelector('.automaticText');
-
-function start(){  
-    console.log(max);
+function start(){    
+    text=document.querySelector('.automaticText').textContent;
+    document.querySelector('.automaticText').textContent='';
     setInterval(() =>{
         if (slideActive) nextImage()
     }, time)
@@ -18,7 +19,7 @@ function start(){
     images.forEach(image => image.addEventListener("mouseout", function restartSlide(){ slideActive = true }, false));
 
     btnNext.addEventListener("click", nextImage, false);
-    btnBack.addEventListener("click", backImage, false);
+    btnBack.addEventListener("click", backImage, false);    
 }
 
 function nextImage(){         
@@ -47,8 +48,8 @@ function backImage(){
         .classList.add("selected")
 }
 
-function automaticText(element){
-    const textArray = element.innerHTML.split('');
+function automaticText(element, text){    
+    const textArray = text.split('');
     element.innerHTML = '';
     textArray.forEach((letter, i) => {
         setTimeout(function(){
@@ -57,6 +58,15 @@ function automaticText(element){
     });    
 }
 
-automaticText(about);
+var observable = new IntersectionObserver(
+    function(entries){
+        if(entries[0].isIntersecting === true && countWritedText==0){
+            automaticText(elementText, text);
+            countWritedText +=1;
+        }
+    }, 
+    {threshold: [0.50]}
+);
 
-window.addEventListener("load",start)
+window.addEventListener("load",start);
+observable.observe(document.getElementById('profile'));
