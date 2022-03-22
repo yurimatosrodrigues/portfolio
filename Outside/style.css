@@ -207,8 +207,9 @@ button{
 .automaticText{
     font-size: 1.5em;
     color: #fff;
-    text-align: justify;   
+    text-align: justify;
     padding: 0 5% 0 5%; 
+    letter-spacing: 3px;
 }
 
 .automaticText::after{
