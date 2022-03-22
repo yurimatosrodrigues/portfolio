@@ -206,13 +206,15 @@
             <section id="contact-section">
                 <p class="title">Contato</p>
                 <div class="contact">
-                    <form class="contact-form">
-                        <input class="contact-input" type="text" placeholder="Nome"/>
-                        <input class="contact-input" type="mail" placeholder="E-mail"/>
-                        <input class="contact-input" type="text" placeholder="Assunto"/>
-                        <textarea class="contact-input" rows="10"></textarea>
+                    <form class="contact-form" action="https://formsubmit.co/yurimatos.tuti@gmail.com" method="POST">
+                        <input class="contact-input" type="text" placeholder="Nome" name="name" required/>
+                        <input class="contact-input" type="mail" placeholder="E-mail" name="email" required/>
+                        <input class="contact-input" type="text" placeholder="Assunto" name="_subject"/>
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <textarea class="contact-input" rows="10" name="message"></textarea>
     
-                        <input class="contact-button" type="button" value="Enviar">
+                        <input class="contact-button" type="submit" value="Enviar">
                     </form>
                 </div>                
             </section>
