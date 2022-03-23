@@ -116,21 +116,30 @@ button{
     height: 195px;
 }
 
-#slider{    
+#slider{
     position:relative;
-    width: 100%;
+    margin: auto auto;
+    display: flex;    
+    flex-direction: row;
+    justify-content:space-between;        
+    width: 85vw;
     height: 100%;    
 }
 
-#slider img{
-    position:absolute;
-    width: 90%;
+.slide-container-images{    
+    position:relative;
+    margin: auto;    
+    width: 95%;
     height: 84%;
-    object-fit: cover;
+}
+
+.slide-image{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    object-fit:scale-down;
     opacity: 0;
     transition: opacity 1000ms;
-    margin-top: 2%;      
-    margin-left: 4.8%;    
 }
 
 #slider img.selected{
@@ -139,24 +148,17 @@ button{
 
 #slider button{
     padding:0;
-    margin-top: 2%;  
+    margin: auto;
     border: none; 
     background-color: transparent;
     outline: none;   
-    font-size: 150%;
+    font-size: 1.5rem;
     color:black; 
-    width: 1.5%;
+    width: 2%;
     height: 84%;
-    position:absolute;    
+    position:relative;    
 }
 
-#btnBack{
-    margin-left: 2%;
-}
-
-#btnNext{      
-    margin-left: 96%;    
-}
 /*</HOME>*/
 
 
