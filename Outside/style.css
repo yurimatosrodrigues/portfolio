@@ -10,7 +10,7 @@ body{
 }
 
 .container{
-    height: 100%;   
+    height: 100%;  
 }
 
 footer{
@@ -65,6 +65,7 @@ h1, h3, h4{
 #intro{    
     height: 90vh;
 }
+
 .header-title{
     color: #fff;
     margin: 0;
@@ -99,23 +100,36 @@ li{
     padding: 0 20px;
 }
 
-button{
-    border: none; 
-    background-color: transparent;
-    color: #fff;     
-}
-
 .btnMenu{
     font-size: 30px;
     position: absolute;
-    right: 10px;
+    right: 20px;
     display: none;
+}
+
+.intro-background{
+    position:absolute;
+    width: 100%;
+    height: 100%;    
+}
+
+.intro-background-image{
+    position: absolute;
+    width:100%;
+    height:90vh;
+    object-fit:fill;    
+}
+
+.intro-text{
+    position: absolute;   
+    margin:30vh 10px auto;    
+    font-size: 1.8rem;
 }
 
 .btnMenu:focus ~ul{
     height: 195px;
 }
-
+/*
 #slider{
     position:relative;
     margin: auto auto;
@@ -144,27 +158,13 @@ button{
 
 #slider img.selected{
     opacity: 1;
-}
-
-#slider button{
-    padding:0;
-    margin: auto;
-    border: none; 
-    background-color: transparent;
-    outline: none;   
-    font-size: 1.5rem;
-    color: #333; 
-    width: 2%;
-    height: 84%;
-    position:relative;    
-}
-
+}*/
 /*</HOME>*/
 
 
 /*<ABOUT>*/
 #profile{    
-    height: 90vh;
+    height: 100vh;
     background-color: #333;    
     padding: 0;
     margin: 0;
@@ -206,12 +206,15 @@ button{
     height: 50%;    
 }
 
-.automaticText{
-    font-size: 1.5em;
+.text-about{
+    font-size: 1.5rem;
     color: #fff;
-    text-align: justify;
-    padding: 0 5% 0 5%; 
-    letter-spacing: 3px;
+}
+
+.automaticText{    
+    color: #8844ee;
+    text-align: justify;    
+    
 }
 
 .automaticText::after{
@@ -292,6 +295,7 @@ button{
     margin:0 auto 0 auto;
     width: 70%;
     height: 90%;   
+    max-width: 460px;
     box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
     border-radius: .5rem;
     transition: all 1s;       
@@ -308,7 +312,7 @@ button{
 }
 
 .project-item-img img:hover{
-    z-index: 0;    
+    z-index: 0;
 }
 
 .project-item:hover{
@@ -387,7 +391,10 @@ button{
 /*</CONTACT>*/
 
 /*<MEDIAQUERY>*/
-@media(max-width: 700px){
+@media(max-width: 750px){
+    .container{
+        width: 100%
+    }
     body{    
         margin: 0;
     }
@@ -412,27 +419,47 @@ button{
     }
     .btnMenu{
         display: flex;
+        border: none; 
+        background-color: transparent;
+        color: #fff;  
     }
     ul, li{
         width: 100%;
     }
-    #intro{
-        /*max-height: 450px;*/
+
+    #intro{        
         height: 50vh;
+    }
+    
+    .intro-background{
+        height: 50vh;
+    }
+
+    .intro-background-image{
+        height: 50vh;
+    }
+
+    .intro-text{
+        margin-top: 17vh;
+    }
+
+    #slider{     
+        margin: auto;
+        width: 50%;
     }
     p{
         font-size: 1.5em;
     }   
     #profile{         
-        height: 185vh;
+        height: 220vh;
     }    
         
     .card-personal{   
-        height: 70vh;
+        height: 65vh;
     }
 
     .about{
-        height: 50vh;
+        height: 65vh;
         padding:0
     }
         
@@ -443,7 +470,7 @@ button{
     }
 
     .skills{
-        height: 65vh;        
+        height: 60vh;        
     }
     .card-personal, .about, .skills{
         width: 100%;
@@ -468,7 +495,7 @@ button{
     }
     .project-item{
         margin:0 auto 0 auto;
-        width: 80%;        
+        max-width: 350px;
     }
     #contact-section{
         height: 75vh;

@@ -45,20 +45,15 @@
 
 
         <div class="container">
-
             <section id="intro">
-                <div id="slider">                    
-                    <button id = "btnBack" class = "buttonBackNext"> < </button>
-                    
-                    <div class="slide-container-images">
-                        <img class="slide-image selected" src ="images/panel techs portfolio.png"/> 
-                        <img class="slide-image" src ="images/godofwar2.jpg"/> 
-                        <img class="slide-image" src ="images/assassinscreed.jpg"/>
-                    </div>                           
-                    
-                    <button id = "btnNext"> > </button>
-                    
-                </div> 
+                <div class="intro-background">
+                    <img class="intro-background-image" src="https://wallpaperaccess.com/full/5651980.jpg">
+                </div>
+                <div class="intro-text">
+                    <span>Hello, world!</span><br/>
+                    <span>My name is Yuri...</span><br/>
+                    <span>I'm a <b class="automaticText"></b></span>
+                </div>
             </section>
             
             <section id="profile">            
@@ -76,12 +71,18 @@
 
                 <div class="about">
                     <p class="title">Sobre mim</p>
-                        <p class = "automaticText">
+                        <p class="text-about">
                             Desenvolvedor de software apaixonado por tecnologia!
-                            Formado em Análise e Desenvolvimento de Sistemas, pela FATEC-SP.
-                            Cursando Técnico em Informática para Internet, na ETEC Sebrae.
-                            Atuo como desenvolvedor .NET desde janeiro de 2019. =)
                         </p>
+                        <p class="text-about">
+                            Formado em Análise e Desenvolvimento de Sistemas, pela FATEC-SP.
+                        </p>
+                        <p class="text-about">
+                            Entusiasta em Segurança da Informação!
+                        </p>
+                        <p class="text-about">
+                            Atuo como desenvolvedor .NET desde janeiro de 2019. =)
+                        </p>                    
                 </div>                   
 
                 <div class="skills">
@@ -91,7 +92,9 @@
                         <div class="grid-item">
                             <table class = "table-skills">
                                 <tr>
-                                    <td colspan="2" align="center"><img width="50" src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp-logo"/></td>
+                                    <td colspan="2" align="center">
+                                        <img width="50" src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" title="C#"/>
+                                    </td>
                                 </tr> 
                                 <tr>
                                     <td width="85%" class = "skill-competence"></td><td class="skill-no-competence"></td>
@@ -100,7 +103,14 @@
                         </div>
                         <div class="grid-item">
                             <table class = "table-skills">
-                                <tr><td colspan="2" align="center"><img src="https://www.freeiconspng.com/uploads/sql-server-icon-png-8.png" width="50" alt="SqlServer" /></td></tr>
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <img src="https://www.freeiconspng.com/uploads/sql-server-icon-png-8.png" 
+                                            width="50" alt="Sql Server" title="SQL Server"/>
+                                        <img src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-and-moodle-elearningworld-5.png" 
+                                            width="50" alt="MySQL" title="MySQL"/>
+                                    </td>
+                                </tr>
                                 <tr>
                                     <td width="95%" class="skill-competence"></td><td class="skill-no-competence"></td>
                                 </tr>
@@ -110,8 +120,8 @@
                             <table class = "table-skills">
                                 <tr>
                                     <td colspan="2" align="center">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" width="50" alt="HTML" />
-                                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" width="50" alt="CSS" />
+                                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" width="50" alt="HTML" title="HTML"/>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" width="50" alt="CSS" title="CSS"/>
                                     </td>
                                 </tr>
                                 <tr>
@@ -122,7 +132,10 @@
                         <div class="grid-item">
                             <table class = "table-skills">
                                 <tr> 
-                                    <td colspan="2" align="center"><img src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" width="50" alt="JavaScript" /></td>
+                                    <td colspan="2" align="center">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" 
+                                        width="50" alt="JavaScript" title="JavaScript"/>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td width="75%" class = "skill-competence"></td><td class="skill-no-competence"></td>
@@ -132,7 +145,10 @@
                         <div class="grid-item">
                             <table class = "table-skills">
                                 <tr>
-                                    <td colspan="2" align="center"><img src="https://cdn-icons-png.flaticon.com/512/1260/1260667.png" width="50" alt="React" /></td>
+                                    <td colspan="2" align="center">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1260/1260667.png" 
+                                                width="50" alt="React" title="React"/>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td width="70%" class = "skill-competence"></td><td class="skill-no-competence"></td>
@@ -142,7 +158,10 @@
                         <div class="grid-item">
                             <table class = "table-skills">
                                 <tr>
-                                    <td colspan="2" align="center"><img src="https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png" width="50" alt="Flutter" /></td>
+                                    <td colspan="2" align="center">
+                                        <img src="https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png" 
+                                            width="50" alt="Flutter" title="Flutter"/>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td width="75%" class = "skill-competence"></td><td class="skill-no-competence"></td>
