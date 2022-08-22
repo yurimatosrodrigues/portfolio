@@ -377,7 +377,7 @@ li{
 /*</CONTACT>*/
 
 /*<MEDIAQUERY>*/
-@media(max-width: 750px){
+@media(max-width: 870px){
     .container{
         width: 100%
     }
@@ -441,7 +441,7 @@ li{
     }    
         
     .card-personal{   
-        height: 65vh;
+        height: 85vh;
     }
 
     .about{
