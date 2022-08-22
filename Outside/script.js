@@ -15,16 +15,6 @@ function start(){
         automaticText(textElement, textsIntro[counter]);
         counter++;
     }, 2000);
-
-    /*setInterval(() =>{        
-        if (slideActive) nextImage()
-    }, time)
-
-    images.forEach(image => image.addEventListener("mouseover", function stopSlide(){ slideActive = false }, false));
-    images.forEach(image => image.addEventListener("mouseout", function restartSlide(){ slideActive = true }, false));
-
-    btnNext.addEventListener("click", nextImage, false);
-    btnBack.addEventListener("click", backImage, false);*/
 }
 
 function nextImage(){         
